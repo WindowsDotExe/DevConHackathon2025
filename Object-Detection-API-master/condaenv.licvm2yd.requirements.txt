@@ -1,0 +1,6 @@
+tensorflow-gpu==2.1.2
+lxml
+tqdm
+flask
+seaborn
+pillow
