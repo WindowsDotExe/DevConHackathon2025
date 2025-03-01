@@ -1,0 +1,17 @@
+name: yolov3-gpu
+
+dependencies:
+  - python=3.9
+  - pip
+  - matplotlib
+  - opencv
+  - flask
+  - seaborn
+  - pillow
+  - lxml
+  - tqdm
+  - pip:
+      - tensorflow[and-cuda]  # ✅ Auto-installs CUDA/cuDNN for GPU support
+      - numpy
+      - pandas
+      - openai
