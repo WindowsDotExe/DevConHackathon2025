@@ -12,12 +12,19 @@ We have developed an AI-driven system that **analyzes passenger boarding and dro
 - The video feed is processed using **computer vision (YOLOv8 + DeepSORT)** to detect and count passengers.  
 - The system tags this data with **timestamps and GPS coordinates**.  
 
-### 2. **Predictive Analytics**  
+### 2. **Feature Engineering**  
+- Extract relevant features such as:  
+  - **Number of boardings/alightings per bus stop.**  
+  - **Time of day** (rush hours, weekdays vs. weekends).  
+  - **Weather conditions** (if external factors influence demand).  
+  - **Special events** (holidays, concerts, etc.).  
+
+### 3. **Predictive Analytics**  
 - Using **machine learning (LSTM, XGBoost, or Graph Neural Networks)**, we analyze historical boarding patterns.  
 - The model identifies **peak travel times, high-demand stops, and seasonal trends**.  
 - This allows us to **predict future passenger flow** with high accuracy.  
 
-### 3. **Dynamic Scheduling & Route Optimization**  
+### 4. **Dynamic Scheduling & Route Optimization**  
 - If demand is high at certain stops, we **increase bus frequency**.  
 - If a route sees fewer passengers, the system **reroutes or reduces buses** to save costs.  
 - A **real-time dashboard** (built with Power BI/Tableau) helps transit authorities make data-driven decisions.  
@@ -30,3 +37,4 @@ We have developed an AI-driven system that **analyzes passenger boarding and dro
 
 ## 🎯 Why This Matters  
 This system **transforms public transportation into a smart, demand-driven network**. Cities can **cut inefficiencies, reduce emissions**, and **enhance urban mobility**—all using AI and computer vision.  
+
